@@ -24,3 +24,24 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+import streamlit as st
+from datetime import datetime, timedelta, timezone
+
+def get_jst_time():
+    # 現在のUTC時間を取得
+    utc_now = datetime.utcnow()
+
+    # UTCからJSTに変換
+    jst = timezone(timedelta(hours=9))
+    jst_now = utc_now.astimezone(jst)
+
+    return jst_now.strftime("%Y年%m月%d日")
+
+def main():
+    st.title("現在の日付（日本時間）")
+    jst_date = get_jst_time()
+    st.write(f"日付：{jst_date}")
+
+if __name__ == "__main__":
+    main()
