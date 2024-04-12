@@ -35,7 +35,7 @@ st.title("今日の時間割")
 
 if weekday in timetables:
 
-st.write("今日は"{weekday}"です。")
+st.write("今日は"+{weekday}+"です。")
 
 st.write("今日の時間割:")
 
