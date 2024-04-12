@@ -7,19 +7,19 @@ import datetime
 
 timetables = {
 
-"Monday": ["9:00-10:00 Math", "10:00-11:00 Science", "11:00-12:00 English"],
+"Monday":["9:00-10:00 Math", "10:00-11:00 Science", "11:00-12:00 English"],
 
-"Tuesday": ["9:00-10:00 History", "10:00-11:00 Math", "11:00-12:00 Art"],
+"Tuesday":["9:00-10:00 History", "10:00-11:00 Math", "11:00-12:00 Art"],
 
-"Wednesday": ["9:00-10:00 Science", "10:00-11:00 English", "11:00-12:00 Math"],
+"Wednesday":["9:00-10:00 Science", "10:00-11:00 English", "11:00-12:00 Math"],
 
-"Thursday": ["9:00-10:00 Math", "10:00-11:00 Art", "11:00-12:00 Science"],
+"Thursday":["9:00-10:00 Math", "10:00-11:00 Art", "11:00-12:00 Science"],
 
-"Friday": ["9:00-10:00 English", "10:00-11:00 Math", "11:00-12:00 History"],
+"Friday":["9:00-10:00 English", "10:00-11:00 Math", "11:00-12:00 History"],
 
-"Saturday": ["No classes"],
+"Saturday":["No classes"],
 
-"Sunday": ["No classes"]
+"Sunday":["No classes"]
 
 }
 
