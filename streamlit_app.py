@@ -11,6 +11,7 @@ selected_option = st.selectbox("項目を選択してください", options)
 
 # 選択された項目に応じて対応する内容を表示
 if selected_option == "スカジ":
+    options = ["迅速攻撃γ","波濤の裂刃","海嘯の悲歌"]
     selected_option = st.selectbox("項目を選択してください", options)
     if selected_option == "迅速攻撃γ":
         st.write("攻撃力")
