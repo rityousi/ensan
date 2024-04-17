@@ -14,11 +14,11 @@ if selected_option == "スカジ":
     options = ["迅速攻撃γ","波濤の裂刃","海嘯の悲歌"]
     selected_option = st.selectbox("項目を選択してください", options)
     if selected_option == "迅速攻撃γ":
-        st.write("攻撃力")
+        st.write("攻撃力+45%,攻撃速度+45")
     elif selected_option == "波濤の裂刃":
-        st.write("配置後")
+        st.write("配置後30秒間、攻撃力+170%")
     elif selected_option == "海嘯の悲歌":
-        st.write("最大HP")
+        st.write("攻撃力、防御力、最大HP+130%")
 elif selected_option == "スペクター":
     st.write("項目2が選択されました。ここに項目2の内容を表示します。")
 elif selected_option == "チェン":
