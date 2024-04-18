@@ -86,17 +86,31 @@ elif selected_option == "シルバーアッシュ":
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
 elif selected_option == "シージ":
-    options = ["迅速攻撃γ","波濤の裂刃","海嘯の悲歌"]
+    options = ["突撃指令γ","スカイスマッシュ","スカルクラッシュ"]
     selected_option = st.selectbox("スキルを選択してください", options)
-    if selected_option == "迅速攻撃γ":
-        st.write("攻撃力+45%,攻撃速度+45")
+    if selected_option == "突撃指令γ":
+        st.write("所持コスト+12")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
+    elif selected_option == "スカイスマッシュ":
+        st.write("次の通常攻撃時、所持コスト+3、周囲の敵全員に攻撃力の340%の物理ダメージを与える")
+        options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
+        selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
+    elif selected_option == "スカルクラッシュ":
+        st.write("攻撃間隔が延長し、攻撃時攻撃力が380%まで上昇、更に40%の確率で攻撃した敵を1.5秒間スタンさせる")
 elif selected_option == "ホシグマ":
-    options = ["迅速攻撃γ","波濤の裂刃","海嘯の悲歌"]
+    options = ["戦意高揚","荊棘","般若"]
     selected_option = st.selectbox("スキルを選択してください", options)
-    if selected_option == "迅速攻撃γ":
-        st.write("攻撃力+45%,攻撃速度+45")
+    if selected_option == "戦意高揚":
+        st.write("防御力+80%、攻撃力+40%")
+        options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
+        selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
+    elif selected_option == "荊棘":
+        st.write("防御力+30%、攻撃される度自身の攻撃力の100%の物理ダメージで敵に反撃する")
+        options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
+        selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
+    elif selected_option == "般若":
+        st.write("攻撃力+140%、防御力+90%、盾を回転し、前方1マスにいる敵全員を同時に攻撃")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
 
