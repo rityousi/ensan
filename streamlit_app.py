@@ -11,7 +11,7 @@ selected_option = st.selectbox("キャラクターを選択してください", 
 
 # 選択された項目に応じて対応する内容を表示
 if selected_option == "アンジェリーナ":
-    options = ["秘杖・急収束","波濤の裂刃","海嘯の悲歌"]
+    options = ["秘杖・急収束","秘杖・微粒子","秘杖・反重力"]
     selected_option = st.selectbox("スキルを選択してください", options)
     if selected_option == "秘杖・急収束":
         st.write("攻撃力+110%")
@@ -26,23 +26,39 @@ if selected_option == "アンジェリーナ":
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から術耐性の低い順です)", options)
 elif selected_option == "イフリータ":
-    options = ["迅速攻撃γ","波濤の裂刃","海嘯の悲歌"]
+    options = ["猛火","爆炎","灼獄"]
     selected_option = st.selectbox("スキルを選択してください", options)
-    if selected_option == "迅速攻撃γ":
-        st.write("攻撃力+45%,攻撃速度+45")
+    if selected_option == "猛火":
+        st.write("攻撃力+20%,攻撃速度+80")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から術耐性の低い順です)", options)
+    elif selected_option == "爆炎": 
+         st.write("次の通常攻撃時、敵に攻撃力の250%の術ダメージを与え、3秒間防御力-300、やけど状態にする")
+         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
+        selected_option = st.selectbox("敵を選択してください(上から術耐性の低い順です)", options)
+    elif selected_option == "灼獄":
+         st.write("攻撃範囲内、地面にいる敵全員に1秒ごとに攻撃力の140%の術ダメージを与え、術耐性-20")
+         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
+        selected_option = st.selectbox("敵を選択してください(上から術耐性の低い順です)", options)
 elif selected_option == "エイヤフィヤトラ":
-    options = ["迅速攻撃γ","波濤の裂刃","海嘯の悲歌"]
+    options = ["二重詠唱","イグニッション","イラプション"]
     selected_option = st.selectbox("スキルを選択してください", options)
-    if selected_option == "迅速攻撃γ":
-        st.write("攻撃力+45%,攻撃速度+45")
+    if selected_option == "二重詠唱":
+        st.write("攻撃速度+60、2回目以降スキル使用時、更に攻撃力+60%")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
+    elif selected_option == "イグニッション":
+        st.write("次の通常攻撃時、敵に攻撃力の370%の術ダメージを与え、攻撃対象の周囲の敵に半分のダメージを与える。さらに6秒間術耐性-15%。")
+        options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
+        selected_option = st.selectbox("敵を選択してください(上から術耐性の低い順です)", options)
+    elif selected_option == "イラプション":
+        st.write("攻撃力+130%、攻撃範囲拡大、通常攻撃の間隔を大幅に短縮、ランダムで攻撃範囲内の敵最大6人を攻撃")
+        options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
+        selected_option = st.selectbox("敵を選択してください(上から術耐性の低い順です)", options)
 elif selected_option == "エクシア":
-    options = ["迅速攻撃γ","波濤の裂刃","海嘯の悲歌"]
+    options = ["アサルトモード","バーストモード","オーバーロード"]
     selected_option = st.selectbox("スキルを選択してください", options)
-    if selected_option == "迅速攻撃γ":
+    if selected_option == "アサルトモード":
         st.write("攻撃力+45%,攻撃速度+45")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
