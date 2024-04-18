@@ -46,7 +46,7 @@ elif selected_option == "エイヤフィヤトラ":
     if selected_option == "二重詠唱":
         st.write("攻撃速度+60、2回目以降スキル使用時、更に攻撃力+60%")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
-        selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
+        selected_option = st.selectbox("敵を選択してください(上から術耐性の低い順です)", options)
     elif selected_option == "イグニッション":
         st.write("次の通常攻撃時、敵に攻撃力の370%の術ダメージを与え、攻撃対象の周囲の敵に半分のダメージを与える。さらに6秒間術耐性-15%。")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
@@ -59,21 +59,30 @@ elif selected_option == "エクシア":
     options = ["アサルトモード","バーストモード","オーバーロード"]
     selected_option = st.selectbox("スキルを選択してください", options)
     if selected_option == "アサルトモード":
-        st.write("攻撃力+45%,攻撃速度+45")
+        st.write("次の通常攻撃時、3回連続で攻撃力の145%の物理ダメージを与える")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
-elif selected_option == "サリア":
-    options = ["迅速攻撃γ","波濤の裂刃","海嘯の悲歌"]
-    selected_option = st.selectbox("スキルを選択してください", options)
-    if selected_option == "迅速攻撃γ":
-        st.write("攻撃力+45%,攻撃速度+45")
+    elif selected_option == "バーストモード":
+        st.write("通常攻撃が攻撃力の125%での4回連続攻撃になる")
+        options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
+        selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
+    elif selected_option == "オーバーロード":
+        st.write("通常攻撃が攻撃力の125%での4回連続攻撃になる")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
 elif selected_option == "シルバーアッシュ":
-    options = ["迅速攻撃γ","波濤の裂刃","海嘯の悲歌"]
+    options = ["強撃γ","雪境生存戦略","真銀斬"]
     selected_option = st.selectbox("スキルを選択してください", options)
-    if selected_option == "迅速攻撃γ":
-        st.write("攻撃力+45%,攻撃速度+45")
+    if selected_option == "強撃γ":
+        st.write("次の通常攻撃時、攻撃力が290%まで上昇")
+        options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
+        selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
+    elif selected_option == "雪境生存戦略":
+        st.write("発動する度初期状態と次の状態とが切り替わる：攻撃範囲縮小、防御力+100%、1秒ごとにHPが最大値の6.0%回復")
+        options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
+        selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
+    elif selected_option == "真銀斬":
+        st.write("防御力-70%、攻撃力+200%、攻撃範囲拡大、敵最大6体を同時に攻撃(近距離攻撃と見なす)")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
 elif selected_option == "シージ":
