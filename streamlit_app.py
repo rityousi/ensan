@@ -35,7 +35,7 @@ elif selected_option == "イフリータ":
     elif selected_option == "爆炎": 
          st.write("次の通常攻撃時、敵に攻撃力の250%の術ダメージを与え、3秒間防御力-300、やけど状態にする")
          options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
-        selected_option = st.selectbox("敵を選択してください(上から術耐性の低い順です)", options)
+         selectedselected_option = st.selectbox("敵を選択してください(上から術耐性の低い順です)", options)
     elif selected_option == "灼獄":
          st.write("攻撃範囲内、地面にいる敵全員に1秒ごとに攻撃力の140%の術ダメージを与え、術耐性-20")
          options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","	遊撃隊盾兵隊長","「最後の蒸気騎士」"]
