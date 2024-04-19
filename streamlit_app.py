@@ -89,7 +89,7 @@ elif selected_option == "エクシア":
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
         param1 = st.number_input("攻撃力を入力してください", value=1)
-        param1 = param1 * (1 + 1.1)
+        param1 = param1 * (1 + 1.45)
         if selected_option == "オリジムシ":
             param2 = 0
             st.write(buturi(param1, param2))
@@ -107,13 +107,13 @@ elif selected_option == "エクシア":
             st.write(buturi(param1, param2))
         elif selected_option == "「最後の蒸気騎士」":
             param2 = 2000
-            st.write(buturi(param1, param2))
+            st.write(buturi(param1, param2) * 3)
     elif selected_option == "バーストモード":
         st.write("通常攻撃が攻撃力の125%での4回連続攻撃になる")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
         param1 = st.number_input("攻撃力を入力してください", value=1)
-        param1 = param1 * (1 + 1.1)
+        param1 = param1 * (1 + 1.25)
         if selected_option == "オリジムシ":
             param2 = 0
             st.write(buturi(param1, param2))
@@ -131,9 +131,9 @@ elif selected_option == "エクシア":
             st.write(buturi(param1, param2))
         elif selected_option == "「最後の蒸気騎士」":
             param2 = 2000
-            st.write(buturi(param1, param2))
+            st.write(buturi(param1, param2) * 4)
     elif selected_option == "オーバーロード":
-        st.write("通常攻撃が攻撃力の125%での4回連続攻撃になる")
+        st.write("通常攻撃が5回連続攻撃になり、攻撃間隔を短縮し、攻撃力が110%まで上昇")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
         param1 = st.number_input("攻撃力を入力してください", value=1)
@@ -155,7 +155,7 @@ elif selected_option == "エクシア":
             st.write(buturi(param1, param2))
         elif selected_option == "「最後の蒸気騎士」":
             param2 = 2000
-            st.write(buturi(param1, param2))
+            st.write(buturi(param1, param2) * 5)
 elif selected_option == "シルバーアッシュ":
     options = ["強撃γ","雪境生存戦略","真銀斬"]
     selected_option = st.selectbox("スキルを選択してください", options)
