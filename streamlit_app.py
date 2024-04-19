@@ -25,7 +25,24 @@ if selected_option == "アンジェリーナ":
         selected_option = st.selectbox("敵を選択してください(上から術耐性の低い順です)", options)
         param1 = st.number_input("攻撃力を入力してください", value=1)
         param1 = param1 * (1 + 1.1)
-        param2 = st.number_input("")
+        if selected_option == "オリジムシ":
+            param2 = 0
+            st.write(result)
+        elif selected_option == "機動盾隊長":
+            param2 = 300
+            st.write(result)
+        elif selected_option == "軽装隊長":
+            param2 = 500
+            st.write(result)
+        elif selected_option == "重装隊長":
+            param2 = 1000
+            st.write(result)
+        elif selected_option == "遊撃隊盾兵隊長":
+            param2 = 1500
+            st.write(result)
+        elif selected_option == "「最後の蒸気騎士」":
+            param2 = 2000
+            st.write(result)
     elif selected_option == "秘杖・微粒子":
         st.write("通常攻撃の間隔を超大幅に短縮し、45%の攻撃力で術攻撃を行う")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
@@ -122,24 +139,3 @@ elif selected_option == "ホシグマ":
         st.write("攻撃力+140%、防御力+90%、盾を回転し、前方1マスにいる敵全員を同時に攻撃")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
         selected_option = st.selectbox("敵を選択してください(上から防御力の低い順です)", options)
-
-import streamlit as st
-
-# 辞書の定義
-word_dict = {
-    "apple": 1,
-    "banana": 2,
-    "orange": 3
-}
-
-# Streamlitアプリのタイトル
-st.title("Word to Number Converter")
-
-# ユーザーが選択した語句を格納する変数
-selected_word = st.selectbox("Select a word:", list(word_dict.keys()))
-
-# 選択された語句に対応した数字を表示
-if selected_word in word_dict:
-    st.write("The corresponding number is:", word_dict[selected_word])
-else:
-    st.write("Word not found in dictionary.")
