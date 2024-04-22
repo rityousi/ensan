@@ -107,7 +107,7 @@ elif selected_option == "エクシア":
             st.write(buturi(param1, param2))
         elif selected_option == "「最後の蒸気騎士」":
             param2 = 2000
-            st.write(int(buturi(param1, param2)) * 3)
+            st.write(int("buturi(param1, param2)") * 3)
     elif selected_option == "バーストモード":
         st.write("通常攻撃が攻撃力の125%での4回連続攻撃になる")
         options = ["オリジムシ","機動盾隊長","軽装隊長","重装隊長","遊撃隊盾兵隊長","「最後の蒸気騎士」"]
